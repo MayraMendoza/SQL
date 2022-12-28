@@ -1,0 +1,3 @@
+LEFT JOIN (left outer join) keyword returns all records from the table(table A), and the matching records from the Right table (Table B).
+The result is 0 records from the right side, if there is not match.
+Note: the Left Join keyword returns all records from the left table(Customers), even if there are no matches in the right table.

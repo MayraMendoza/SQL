@@ -1,0 +1,3 @@
+The FULL OUTER JOIN keyword returns all records when there is a match in left (Table A) or rigth (tabke B) table records.
+
+NOTE: The full OUTER JOIN keyword returns all matching records from both tables whether the other table matches or not.

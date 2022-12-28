@@ -1,0 +1,4 @@
+The Right Join keyword returns all records from the right table (table B), and the matching records from the
+left table (table A). (result is 0 from the left side, if there is no match).
+
+Select * FROM orders RIGHT join Customers ON Orders.CustomerID=CUSTOMERS.customerID;
