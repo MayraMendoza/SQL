@@ -1,5 +1,5 @@
 The INNER JOIN keyword selects records that have matching values in both tables.
-Practice 
+Practice
 SELECT * FROM Orders Inner Join Customers ON orders.CustomerId=Customer.CustomerID
 
 African Cities -https://www.hackerrank.com/challenges/african-cities/problem?isFullScreen=true
