@@ -1,0 +1,5 @@
+Given the CITY and COUNTRY tables, query the names of all cities where the CONTINENT is 'Africa'.
+https://www.hackerrank.com/challenges/african-cities/problem
+
+
+SELECT city.name From City inner join COUNTRY ON CITY.COUNTRYCODE= COUNTRY.CODE WHERE CONTINENT ='AFRICA'
