@@ -6,7 +6,7 @@ Example
 SELECT DISTINCT column 1, column 2
 FROM table_name;
 
-SELET example without distinct (includes all duplicates)
+SELECT example without distinct (includes all duplicates)
 SELECT country From customers;
 
 This will return all countries even repeating ones.
