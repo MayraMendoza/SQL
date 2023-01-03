@@ -1,0 +1,16 @@
+SQL is a standard language for accessing and manipulating databases.
+
+What is SQL?
+SQL stands for structured query language, it became the stander of the American national standards institute (ANSI) IN 1986 and the international organization from standardization (ISO) in 1987.
+
+What can SQL do?
+Execute queries against a database, retrieve data from a database, insert records in a database, update records, delete records, create new databases, create new tables, create stored procedures in a database , create views in a databases, set permissions on tables, procedures and views.
+
+RDBMS- standard for relational database management system.
+RDBMS is the basis for SQL, and all modern database systems.
+The data in RDBMS is stored in database objects call tables. A table is collection of related dat entries and it consists for columns and rows.
+
+Every table is broken up in smaller entities called fields. A field is a column in a table that is designed to maintain specific information about every record in the table.
+
+Row - a record, also called a row, is each individual entry that exists in a table.
+Column - is a vertical entity in a table that contains all information associated with a specific in a table.
