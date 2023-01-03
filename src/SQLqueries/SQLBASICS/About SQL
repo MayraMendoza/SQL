@@ -14,3 +14,15 @@ Every table is broken up in smaller entities called fields. A field is a column 
 
 Row - a record, also called a row, is each individual entry that exists in a table.
 Column - is a vertical entity in a table that contains all information associated with a specific in a table.
+
+SQL Syntax
+SELECT - extracts data from a database
+UPDATE- updates data in the database
+DELETE - deletes data from a database
+INSERT INTO - inserts new data into a database
+CREATE DATABASE- creates a new database
+ALTER DATABASE - modifies a database
+CREATE TABLE - creates a new table
+DROP TABLE - deletes a table
+CREATE INDEX - creates an index (search key)
+DROP INDEX- deletes an index
