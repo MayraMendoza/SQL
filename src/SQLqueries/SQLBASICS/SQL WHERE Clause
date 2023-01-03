@@ -1,0 +1,80 @@
+The WHERE Clause is used to filter records.
+It is used to extract only those records that fulfill a specific condition.
+
+WHERE Syntax
+
+SELECT column 1, column 2
+FROM table_name
+Where condition;
+
+(Can be used in other statements like update , delete etc..”)
+
+WHERE Clause Example
+Select all customer from the country “mexico”.
+SELECT * FROM customers
+WHERE country =‘Mexico’;
+
+
+TEXT Fields vs Numeric fields
+SQL requires single quotes around text values (most allow double quotes)
+NUMERIC FIELDS SHOULD NOT ENCLOSED IN QUOTES!
+
+SELECT *From Customers
+WHERE CustomerId=1;
+
+Operators in the WHERE Clause
+The following operators can be used in the WHERE Clause:
+
+=    equal
+>    great than
+<    less than
+>=  greater than or equal
+<=  Less than or equal
+<>   Not Equal(!= can be used in some SQL versions)
+
+
+BETWEEN   between a certain range
+
+SELECT * FROM Products
+WHERE Price Between 50 AND 60;
+
+
+LIKE  Search for a pattern
+Will return all records from data base with the city starting in S
+SELECT * FROM Customer
+WHERE City LIKE ’s%’;
+
+
+IN  To specify multiple possible values for a column
+
+Return all records from database with the city is Paris or London
+SELECT * FROM Customers
+WHERE City IN (‘Paris’ ‘London’);
+
+WHERE EXERCISES:
+
+1.Select all records where the city column has the value ‘Berlin’
+
+SELECT * FROM Customer
+WHERE CITY = ‘Berlin’;
+
+2. Select the NOT keyword to select all records where city is not ‘Berlin’
+
+SELECT * FROM Customers
+WHERE NOT City = ‘Berlin’
+
+3. Select all records where the customerID column has the value 32
+SELECT * FROM Customer
+WHERE CustomerID = 32;
+
+4.Select all records Where the City column has the Value ‘Berlin’ and the ‘PostalCode’ has the value 12209
+
+SELECT * FROM Customers
+WHERE city =‘Berlin’
+And PostalCode = 12209;
+
+5. Select all records where the city column has the value ‘Berlin’ or ‘London’.
+
+SELECT * FROM CUSTOMERS
+WHERE CITY =‘ Berlin’
+OR CITY = ‘London’
