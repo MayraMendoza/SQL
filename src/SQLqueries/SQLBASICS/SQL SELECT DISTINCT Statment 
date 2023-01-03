@@ -1,0 +1,19 @@
+The SELECT DISTINCT stamens is used to return only distinct (different values).
+
+Inside a table, a column often contain many duplicate values; and sometimes you only want to list the different (distinct) values.
+
+Example
+SELECT DISTINCT column 1, column 2
+FROM table_name;
+
+SELET example without distinct (includes all duplicates)
+SELECT country From customers;
+
+This will return all countries even repeating ones.
+
+Select DISTINCT Examples
+SELECT DISTINCT Country FROM Customers;
+(This will return all the countries in the able once no multiples)
+
+Following statement lists the number of different (distinct)customer countries:
+SELECT COUNT(DISTINCT Country) From Customer;
