@@ -1,0 +1,74 @@
+SQL AND, OR and NOT Operators
+
+The WHERE Clause can be combines with AND, OR, and NOT operators.
+The AND and OR Operators are used to filter records based on more than one condition.
+
+The AND operator displays  record if all the conditions separated by the AND are True
+The OR operator displays a record if any of the conditions separated by OR is TRUE.
+The NOT operator display a record if the condition(s) is NOT TRUE.
+
+AND
+SELECT column1, column2….
+FROM table_name
+WHERE condition1 AND condition2 AND condition3;
+
+OR
+SELECT column1, column 2
+FROM table_name
+WHERE condition1 OR condition2 OR condition3;
+
+NOT
+SELECT column1, column2…
+FROM table_name
+WHERE NOT condition;
+
+
+
+
+
+
+
+
+
+
+
+
+
+AND EXAMPLE
+Select all fields from customers where country is German and city is Berlin
+
+SELECT * FROM Customers
+WHERE Country = ‘Germany’
+AND Country = ‘Berlin’
+
+OR Example
+Return all fields in customer where city is ‘Berlin’ OR ‘Munichen’
+
+SELECT* FROM Customers
+WHERE Country = ‘Berlin’
+OR Country = ‘ Munichen’
+
+
+Return all fields from customer where country is ‘Germany’ OR ‘spain’
+
+SELECT * FROM Customers
+WHERE country =‘Germany’
+OR Country = ‘Spain’
+
+NOT Example
+Return all record from customer where country is not Germany
+SELECT* FROM Customers
+WHERE NOT Country = “Germany”;
+
+
+Combine AND, OR and NOT
+Select all fields from customer where country is German and city myst be Berlin or munchen
+
+SELECT * FROM Customers
+WHERE Country = “Germany”
+AND(city = ‘Berlin’ OR city =‘Munchen’)
+
+Select all fields from customers where country is not Germany and not USA
+
+SELECT * FROM Customers
+WHERE NOT country = ‘German’ AND NOT country=‘USA’;
