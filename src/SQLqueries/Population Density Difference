@@ -1,0 +1,5 @@
+Query the difference between the maximum and minimum populations in CITY.
+Hackerrank link:https://www.hackerrank.com/challenges/population-density-difference/problem?isFullScreen=true
+
+SELECT max(Population)-min(population)From city;
+
