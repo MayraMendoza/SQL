@@ -1,0 +1,19 @@
+SQL NULL Values
+
+A null value is a field with no value
+If a field in a table is optional it is possible to insert a new record or update or updating a record without adding a value to the field - value will be saved with a null value.
+
+It is not possible to test NULL values with comparison operators <>, =
+
+IS NULL
+IS NOT NULL
+
+Exercise
+
+1. Select all record from the customers where the postal code column is empty.
+
+SELECT * FROM CUSTOMERS WHERE PostalCode IS NULL;
+
+2. Select all records from the customers where the postalcode column is not empty
+
+SELECT * FROM Customers WHERE postalCode is not NULL;
