@@ -1,0 +1,26 @@
+SQL Delete Statement
+The delete statement is used to delete existing records in a table
+
+Syntax
+DELETE FROM table_name WHERE Condition;
+
+WARNING : if WHERE Clause is omitted then all records will be omitted.
+
+Example delete the customer ‘Mayra Mendoza’ from the “customers” table:
+
+DELETE FROM Customers WHERE CustomerName =‘Mayra Mendoza’;
+
+DELETE All Records DELETE FROM table_name;
+
+Example DELETE all rows in the “Customer” Table, without deleting the table;
+
+Exercise 1:
+Delete all the cords from the customers table where the country value is ‘Norway’
+
+DELETE FROM Customers
+Where Country = ‘Norway’;
+
+Exercise 2:
+Delete all the records from the Customer table
+
+DELETE FROM Customers;
