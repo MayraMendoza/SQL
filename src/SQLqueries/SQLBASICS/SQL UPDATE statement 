@@ -1,0 +1,49 @@
+
+SQL Update statement
+
+The update statement is used to modify the existing records in a table.
+
+Update Syntax
+
+Update Table_nameHere
+SET column1 = value 1, column 2 = value 2 etc
+WHERE condition ;
+
+
+WARNING: The. WHERE clause specifies which records should be updated. When omitted all records in the table will update
+
+
+Example UPDATE FIRST CUSTOMER (CustomerID=1)
+
+UPDATE Customers
+SET ContactName = ‘Mayra Mendoza’ , City = ‘Frankfurt’
+WHERE CustomerID =1
+
+
+UPDATING Multiple Records
+
+Example set contactName to Sam where Country = ‘Mexico’:
+
+UPDATE Customers
+SET ContactName =‘Sam’
+WHERE Country = ‘Mexico’
+
+Exercise 1:
+UPDATE the city column of all records in the Customer Table
+
+UPDATE Customer
+SET city = ‘Olso’
+
+Exercise 2:
+SET the vale of the City Column to ‘Oslo’, but only where the Country column has the Value “Norway”.
+
+UPDATE Customers
+SET city =‘Oslo’
+WHERE Country = ‘Norway’;
+
+Exercise 3:
+Update the City value to ‘oslo’  and the Country Value  to ‘Norway’ where CustomerID =30;
+
+UPDATE Customers
+SET City = ‘Oslo’ , Country =‘Norway’
+WHERE CustomerID =30;
