@@ -1,0 +1,54 @@
+SQL MIN() and MAX() Functions
+
+
+The MIN() function returns the smallest value of the selected column.
+The MAX() functions returns the largest value of the selected column.
+
+MIN()
+SELECT MIN(column_name)
+FROM table_name
+WHERE conditions;
+MAX()
+SELECT MIN(Column_name)
+FROM table_name
+WHERE condition;
+
+
+
+ Example - find the price of the cheapest product
+SELECT MIN(price) AS SmallestPrice
+FROM Products;
+
+Exercise 1:
+Select the record with the smallest value of the price column
+
+SELECT MIN(price)
+FROM Products:
+
+Exercise 2:
+select the record with the highest value of the price column.
+SELECT MAX(price)
+FROM products
+
+
+Exercise 3:
+
+Use the correct function to return the number of records that have the Price value set to 18.
+
+SELECT COUNT (*)
+FROM Products
+WHERE Price =18;
+
+
+Exercise 4:
+Use an SQL function to calculate the average price of all products.
+
+SELECT AVG(Price)
+FROM Products;
+
+Exercise 5:
+
+Use an SQL function to calculate the sum of all the Price  column values in the products table.
+
+SELECT SUM(price)
+FROM Products;
