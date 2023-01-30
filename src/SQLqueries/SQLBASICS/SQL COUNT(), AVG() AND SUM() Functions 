@@ -1,0 +1,57 @@
+
+SQL COUNT(),AVG() AND SUM() Functions
+
+The COUNT() function returns the number of rows that matches a specified criterion
+
+SELECT COUNT(colum_name)
+FROM table_name
+WHERE condition;
+
+The AVG() function returns the average value of a numeric column
+
+SELECT AVG(column_name)
+FROM table_name
+WHERE condition;
+
+The SUM() function returns the total sum of a numeric column
+
+SELECT SUM(column_name)
+FROM table_name
+WHERE condition;
+
+——EXAMPLE COUNT()——-
+
+Find the number of products
+
+SELECT COUNT(ProductID)
+FROM Products;
+
+——-EXAMPLE AVG()———
+Find the average price of all products
+SELECT AVG(Price)
+FROM Products;
+
+——-EXAMPLE SUM()——-
+
+SLECT SUM(Quantity)
+FROM OrderDetails
+
+
+EXERCISE 1
+Return the number of records that have price value set to 19
+
+SELECT COUNT(*)
+FROM Products
+WHERE Price =18;
+
+Exercise 2
+
+Use SQL function to calculate the average price of all products
+SELECT AVG(PRICE)
+FROM Products
+
+Exercise 3
+Calculate the sum of all the price column values in the products table
+
+SELECT SUM(Price)
+FROM Products
