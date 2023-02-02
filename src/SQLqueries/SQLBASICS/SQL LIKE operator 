@@ -1,0 +1,74 @@
+SQL LIKE Operator
+
+The sQL like operator is used in a where clause to search for a specific pattern in a column.
+
+There are two wildcards often in conjunction with the LIKE operator
+% represents zero, one, or multiple characters  MS * (use asterisk)
+_ (underscore ) represents one, single character  MS ? (Use question mark)
+
+(They can also be used in combinations)
+
+LIKE Syntax
+
+SELECT column1, column2
+FROM table_name
+WHERE column LIKE pattern;
+
+—-> it is possible to combine any number of conditions using AND or OR operators.
+
+Examples of LIKE OPERATOR  —> MS % will be replaced with *
+
+WHERE CustomerName LIKE                  finds any value that starts with “a”
+‘a%’
+
+
+WHERE CustomerName LIKE                 finds any value that end with “a”
+‘%a’
+
+WHERE CustomerName LIKE 	             finds any values that have “or” in any position
+‘%or%
+
+WHERE CustomerName LIKE.                Finds any value that have “r” in the second position
+‘_r%’
+
+WHERE CustomerName LIKE 	            finds any values that start with “a” and are at least 2
+‘a_%’					                characters in length
+
+WHERE CustomerName LIKE                 finds any values that start with “a” and are at least
+‘a__%’					                3 characters in length
+
+
+WHERE CustomerNameLike 		           find any values that start with “a” and end with “o”
+‘a%o’
+
+
+
+
+
+Exercise 1:
+Select all records where the value of the City column starts with the letter “a”
+SELECT * FROM CUSTOMERS
+WHERE City LIKE “a%”
+
+Exercise 2:
+Select al records where the value of the City column ends with the letter ”a”.
+
+SELECT * FROM Customers
+WHERE City LIKE ‘%a’
+
+Exercise 3:
+Select all records where the value of the City column contains the letter “a”
+SELECT * FROM Customer
+WHERE City like ‘%a%’
+
+Exercise 4:
+
+Select all records where the value of City column starts with letter “a” and ends with the letter “b”
+SELECT * FROM Customers
+WHERE City LIKE  “a%b”
+
+
+Exercise 5:
+Select all records where the value of the City column does Not start with the letter “a”
+SELECT * FROM Customers
+WHERE CITY NOT LIKE ‘A%’
