@@ -1,0 +1,64 @@
+SQL Wildcards
+
+SQL Wildcard characters
+
+A wildcard character is used to substitute one or more characters in a string
+
+Wildcard characters are used with the LIKE operator.
+
+IN MS ACCESS
+
+
+SYMBOL   	    DESCRIPTION
+
+
+ *                   represents Zero or more characters ->  bl* finds bl, clack, blue and blob
+
+ ?                  Represents a single character —> h?t finds hot, hat, hit.
+
+[ ]                 Represents any single character within the brackets —> h[oa]t finds hot and hat but not hit
+
+ !                  Represents any character not in the bracket —> h[!oa]t finds hit, but not hot and hat
+
+  -             Represents any single character within the specific range —> c[a-b] finds cat and cbt
+
+#	       Represents any single numeric character 		—> 2#5 finds 205, 215, 225
+									235, 245, 255, 265,275, 285 and 295
+
+ALL the wildcards can also be used in combinations!
+Here are some examples showing different like operators with ‘%’ and ‘_’ wildcards:
+
+WHERE CustomerName Like 	Finds any values that start with “a”
+‘a%’
+
+
+Exercise 1:
+SELECT ALL RECORDS WHERE THE SECOND LETTER OF THE CITY IS AN “A”
+
+SELECT * from customers
+Where city like ‘_a%’
+
+
+Exercise 2:
+Select all records where the first letter of the city is an “a” or a “c” or and “s”
+
+Select * from customers
+Where city like ‘[acs]%’
+
+
+Exercise 3:
+Select all records where the first letter of the city starts with anything from an “a” to an “f”
+
+SELECT* from Customers
+Where city like ‘[a-f]%’
+
+Exercise 4:
+Select all records where the first letter of the city is not an “a’ or a “c” or an “f”
+
+SELECT * from Customers
+Where city not like ‘[acf]%’
+
+
+Or
+SELECT * FROM Customer
+Where city LIKE ‘[!ACF]%’
