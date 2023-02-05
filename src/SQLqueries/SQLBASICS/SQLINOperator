@@ -1,0 +1,39 @@
+SQL IN Operator
+
+The IN operator allows you to specify multiple values in a WHERE clause
+The IN operator is a shorthand for multiple OR conditions.
+
+IN syntax
+SELECT column_name
+FROM table_name
+WHERE column_name IN (value1, 2, 3,)
+
+
+Example
+Select all customers that are located in Germany, frame or uk
+
+SELECT * FROM Customers
+WHERE Country IN(‘Germany’, ‘France’, ‘UK’);
+
+Example 2:
+Select all customers that are not located in Germany, frame or uk
+
+SELECT *FROM Customers
+WHERE Country NOT IN(‘Germany’, ‘France’, ‘UK’);
+
+Example 3:
+Select all customers that are from the same countries as the suppliers
+
+SELECT * FROM Customers
+WHERE Country IN (SELECT Country FROM Suppliers);
+
+Exercise 1:
+Select all the records where country is either Norway or France
+
+SELECT * FROM Customers
+WHERE Country IN (‘Norway’ , ‘France’);
+
+Exercise 2:
+Select all the records where country is not “Norway” and not “France”
+SELECT * FROM Customers
+WHERE Country NOT IN (‘Norway’ , ‘France’);
