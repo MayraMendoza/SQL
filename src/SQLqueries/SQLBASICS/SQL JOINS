@@ -1,0 +1,32 @@
+SQL JOINS
+
+A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+
+Example
+SELECT Order.orderID , Customer.CustomerName, Order.orderDate
+FROM Orders
+INNER JOIN Customer ON Orders.CustomerID=Customers.CustomerID;
+
+
+There are different types of joins
+INNER JOIN - return records that have matching values in both (only matching values)
+LEFT(OUTER) JOIN - returns all records from the left table and the matching tables from the right table.
+RIGHT OUTER JOIN- returns all records from the right table, and the mated records from the left table
+FULL OUTER JOIN - returns all records where there is a match in either left or right.
+
+Exercise 1:
+Inset the missing parts in the JOIN clause to join the two tables Orders and Customers, using the CustomerID field in both tables as the relationship between the two tables.
+
+SELECT*
+FROM Orders
+LEFT JOIN Customers
+ON Orders.CustomerID = Customer.CustomerID
+
+
+Exercise 2:
+Choose the correct JOIN clause to select all the records from the sutlers table plus all the matches in the Orders table.
+
+SELECT *
+FROM Orders
+RIGHT JOIN Customers
+ON Order.CustomerID= Customers.CustomerID;
